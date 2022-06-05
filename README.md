@@ -1,5 +1,4 @@
-This website is hosted on surge.sh 
-#live website :- https://text-u.surge.sh/
+This website is live on  :- https://text-u.surge.sh/
 
 
 # Getting Started with Create React App
