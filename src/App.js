@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Navbar title="Textutils" />
+      <Navbar title="Text-U" />
       <Alert alert={alert} />
       <Router>
         <Routes>

@@ -53,11 +53,11 @@ export default function TextForm({ heading,showalert }) {
         <button className="btn btn-primary" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleLoClick}>
           Convert to LowerCase
         </button>
         <button
-          className="btn btn-primary mx-2"
+          className="btn btn-primary mx-2 my-1"
           onClick={handleclear}
           style={{ padding: 0 }}
         >
@@ -82,11 +82,11 @@ export default function TextForm({ heading,showalert }) {
       <div className="container my-4">
         <h2>your Text summary</h2>
         <p>
-          {text.split(" ").length-1} words and {text.length} characters
+          {text.split(/\S+/).filter((element)=>{return element.length != 0}).length} words and {text.length} characters
         </p>
         <p>{0.008 * text.split(" ").length} minutes take to read</p>
         <h1>preview</h1>
-        <p>{text}</p>
+        <p>{text.length>0?text:"nothing to preview"}</p>
       </div>
     </>
   );

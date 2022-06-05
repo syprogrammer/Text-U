@@ -45,7 +45,7 @@ function Navbar(props) {
                 aria-expanded="false"
                 style={{ color: "white" }}
               >
-                Dropdown
+                Background
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li
